@@ -1,4 +1,4 @@
-var ws = new WebSocket("ws://127.0.0.1:8080");
+var ws = new WebSocket("wss://mattiafranchini1-fluffy-space-doodle-xjp95v9wpwcv5q6-8080.preview.app.github.dev/");
 
 let username = 0;
 let nickname;

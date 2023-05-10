@@ -1,4 +1,7 @@
 import { WebSocketServer } from "ws";
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 
 let clients_socket = []
 let num_utenti = 0;
@@ -10,6 +13,29 @@ let cartelle_utenti = new Map();
 let partita_iniziata = false;
 let ambo = false, terna = false, quaterna = false, cinquina = false, tombola = false;
 const wss = new WebSocketServer({ port: 8080 });
+console.log(wss);
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+console.log(__dirname)
+
+
+import express from 'express';
+
+const app = express();
+
+app.listen(3000, () =>
+  console.log('Example app listening on port 3000!'),
+);
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+})
+
+app.get('/script.js', (req, res) => {
+  res.sendFile(path.join(__dirname, 'script.js'));
+})
 
 wss.on('connection', function connection(ws) {
   if (partita_iniziata == true) {
