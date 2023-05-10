@@ -1,4 +1,4 @@
-var ws = new WebSocket("ws://tombola-n9i0.onrender.com");
+var ws = new WebSocket("wss://mattiafranchini1-fluffy-space-doodle-xjp95v9wpwcv5q6-3000.preview.app.github.dev");
 
 let username = 0;
 let nickname;
