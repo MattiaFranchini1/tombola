@@ -12,7 +12,7 @@ let estrazione = 0;
 let cartelle_utenti = new Map();
 let partita_iniziata = false;
 let ambo = false, terna = false, quaterna = false, cinquina = false, tombola = false;
-const wss = new WebSocketServer({ port: 8080 });
+const wss = new WebSocket.Server({ port: 8080 });
 console.log(wss);
 
 
