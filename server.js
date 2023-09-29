@@ -1,4 +1,4 @@
-import { WebSocketServer } from "ws";
+import { WebSocket } from "ws";
 import path from 'path';
 import { fileURLToPath } from 'url';
 
