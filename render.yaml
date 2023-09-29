@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: app
+    buildCommand: "npm install && npm run build"
+    startCommand: "node server.js"
+  - type: web
+    name: nginx
+    buildCommand: "echo 'Nessuna build necessaria'"
+    startCommand: "nginx -c /etc/nginx/nginx.conf"
+      - key: NGINX_PORT
+        value: "80"
+  - type: data
+    name: data
