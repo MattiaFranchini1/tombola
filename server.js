@@ -20,7 +20,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 console.log(__dirname)
 
-
+/*
 import express from 'express';
 
 const app = express();
@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 app.get('/script.js', (req, res) => {
   res.sendFile(path.join(__dirname, '/script.js'));
 })
-
+*/
 
 wss.on('connection', function connection(ws) {
   if (partita_iniziata == true) {
