@@ -1,4 +1,4 @@
-var ws = new WebSocket("wss://tombola-n9i0.onrender.com");
+var ws = new WebSocket("wss://3.75.158.163");
 
 let username = 0;
 let nickname;
