@@ -1,4 +1,4 @@
-var ws = new WebSocket("wss://tombola-n9i0.onrender.com");
+/*var ws = new WebSocket("wss://tombola-n9i0.onrender.com");
 
 let username = 0;
 let nickname;
@@ -129,3 +129,4 @@ function log_in() {
 function reload(){
     location.reload();
 }
+*/
