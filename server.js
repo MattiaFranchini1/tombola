@@ -87,11 +87,11 @@ wss.on('connection', function connection(ws) {
     ready_counter = 0;
     //console.log("La lunghezza dei client è: " + clients_socket.length);
     ws.close()
+      if(clients_socket < 1){
+        rincomincia()
+      }
   }
-    }else{
-      rincomincia()
     }
-    
   };
 
 });
