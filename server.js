@@ -88,6 +88,8 @@ wss.on('connection', function connection(ws) {
     //console.log("La lunghezza dei client è: " + clients_socket.length);
     ws.close()
   }
+    }else{
+      rincomincia()
     }
     
   };
